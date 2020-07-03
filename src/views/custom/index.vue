@@ -11,7 +11,7 @@
 export default {
   data () {
     return {
-      tabData: ["未完成事项", "已完成事项"],
+      tabData: ["全部客户", "新增客户"],
       activeName: "tab-0",
     }
   },
