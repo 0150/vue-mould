@@ -12,7 +12,8 @@ let minins = {
     initNewBreadRoute (index, name) {
       // index：判断原来的面包屑导航留几个
       let data = JSON.parse(this.breadData);
-      let arr = [data[index], name];
+      let arr = data.splice(0, index);
+      arr.push(name);
       this.$store.commit("breadRoute/SET_BREAD_DATA", JSON.stringify(arr));
     }
   }

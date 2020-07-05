@@ -18,11 +18,11 @@ export default {
   methods: {
     handleClick (e) {
       let index = e.index;
-      this.initNewBreadRoute(0, this.tabData[index]);
+      this.initNewBreadRoute(1, this.tabData[index]);
     },
   },
   created () {
-    this.initNewBreadRoute(0, this.tabData[0]);
+    this.initNewBreadRoute(1, this.tabData[0]);
   }
 }
 </script>
